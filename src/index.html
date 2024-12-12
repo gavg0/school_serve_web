@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School_serve</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-row min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white shadow-lg">
+            <div class="p-4">
+                <h1 class="text-xl font-bold text-gray-800">School_serve</h1>
+            </div>
+            <nav class="mt-4">
+                <a href="./index.html" class="flex items-center px-4 py-2 mx-2 rounded-md bg-blue-100 text-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Introduction</span>
+                </a>
+                <a href="./installation.html" class="flex items-center px-4 py-2 mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Installation</span>
+                </a>
+                <a href="./data-storage.html" class="flex items-center px-4 py-2 mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M12 22v-7l-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4l-2 2v7"></path>
+                        <path d="M6 12V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5m2 3v7"></path>
+                    </svg>
+                    <span>Data Storage</span>
+                </a>
+                <a href="./api-methods.html" class="flex items-center px-4 py-2 mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M12 22v-7l-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4l-2 2v7"></path>
+                        <path d="M6 12V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5m2 3v7"></path>
+                    </svg>
+                    <span>API Methods</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->   
+        <div class="prose w-2/3 mx-auto lg:max-w-4xl text-lg px-2 pb-8">
+            <h2>School Serve API Documentation</h2>
+            <p>
+            This API is my Project and is supposed to digitalize paper worksheets.<br/>
+            It provides functionalities for uploading images in various formats, converting them to the web-optimized WebP format, and accessing them through unique identifiers, creator IDs, or upload timestamps.
+            </p>
+            <p>
+            This documentation provides a guide to the APIs endpoints, request parameters, responses, and data storage mechanisms.
+            </p>
+            <h2>Technologies Used:</h2>
+            <ul>
+            <li><a href="https://www.java.com/en/">Java</a></li>
+            <li><a href="https://javalin.io/">Javalin</a></li>
+            <li><a href="https://maven.apache.org/">Maven</a></li>
+            <li><a href="https://imagemagick.org/index.php">Image Magick</a></li>
+            </ul> 
+            <h2>Current Status</h2>
+            <p>
+            I have underestimated the Project size and complexity so not all functions are available.<br/>
+            I worked on all functions but I don't want to upload unfinished or buggy code so I have focused on the core functions.<br/>
+            Things like Authentication are of course missing but I took care of proper error handling and logging.<br/>
+            These are the functions that are available:
+            </p>
+            <ul>
+            <li>Upload an image by providing a user_ID</li>
+            <li>Search for an image by its ID</li>
+            <li>Search for all images uploaded from a user_ID</li>
+            <li>Search for all images uploaded on a specific day</li>
+            <li>Images get converted to WEBP to save storage</li>
+            </ul>
+            <h2>Structure</h2>
+            <p>
+            The Project has a folder called school_serve where all the code is located.<br/>
+            The README file just contains a link to this documentation.<br/>
+            Inside the school_serve folder you will find the following folders:<br/>
+            - images: This is where the images are stored as well as the image.json and the last_id.txt<br/>
+            - src/main/java/com/example: This is where the code is located<br/>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

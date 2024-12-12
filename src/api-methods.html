@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School_serve</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-row min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white shadow-lg">
+            <div class="p-4">
+                <h1 class="text-xl font-bold text-gray-800">School_serve</h1>
+            </div>
+            <nav class="mt-4">
+                <a href="./index.html" class="flex items-center px-4 py-2  mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Introduction</span>
+                </a>
+                <a href="./installation.html" class="flex items-center px-4 py-2  mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Installation</span>
+                </a>
+                <a href="./data-storage.html" class="flex items-center px-4 py-2  mx-2 rounded-md text-gray-600 hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M12 22v-7l-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4l-2 2v7"></path>
+                        <path d="M6 12V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5m2 3v7"></path>
+                    </svg>
+                    <span>Data Storage</span>
+                </a>
+                <a href="./api-methods.html" class="flex items-center px-4 py-2  mx-2 rounded-md bg-blue-100 text-blue-600" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <path d="M12 22v-7l-2-2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4l-2 2v7"></path>
+                        <path d="M6 12V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v5m2 3v7"></path>
+                    </svg>
+                    <span>API Methods</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Main Content -->
+        <div class="prose w-2/3 mx-auto lg:max-w-4xl text-lg px-2 pb-8">
+            <h2>API-Methods</h2>
+            <p>
+                The School_serve API provides several methods for interacting with the School_serve service. <br/>
+                The methods allow you to upload images, retrieve images by creator ID, and retrieve images by image ID. <br/>
+                These are all methods that are available:<br/>
+            </p>
+            <div class="h-1 w-full bg-gray-400 rounded-full my-4"></div>
+            <div class="bg-green-500/50 p-4 rounded-2xl mb-4 border-2 border-green-500 shadow-lg shadow-green-500"><strong>GET</strong> <code>/</code> - This is the school_serve API.</div>
+            <p>This is just the default Route</p>
+            <div class="h-1 w-full bg-gray-400 rounded-full my-4"></div>
+            <div class="bg-green-500/50 p-4 rounded-2xl mb-4 border-2 border-green-500 shadow-lg shadow-green-500"><strong>GET</strong> <code>/ImageByID/{'{ID}'}</code> - Retrieve image by ID.</div>
+            <p><strong>Required:</strong> Image_ID: INT<br/>
+            <strong>Receive:</strong> IMAGE.webp<br/></p>
+            <div class="h-1 w-full bg-gray-400 rounded-full my-4"></div>
+            <div class="bg-green-500/50 p-4 rounded-2xl mb-4 border-2 border-green-500 shadow-lg shadow-green-500"><strong>GET</strong> <code>/ImageByCreatorID/{'{creatorId}'}</code> - Retrieve images by creator ID.</div>
+            <p><strong>Required:</strong> Creator_ID: INT <br/>
+            <strong>Receive:</strong> IMAGE.webp</p>
+            <div class="h-1 w-full bg-gray-400 rounded-full my-4"></div>
+            <div class="bg-green-500/50 p-4 rounded-2xl mb-4 border-2 border-green-500 shadow-lg shadow-green-500"><strong>GET</strong> <code>/ImageAtTimeStamp/{'{timeStamp}'}</code> - Retrieve images by timestamp.</div>
+            <p><strong>Required:</strong> Timestamp of any time of the Day required<br/>
+            <strong>Receive:</strong> IMAGE.webp</p>
+            <div class="h-1 w-full bg-gray-400 rounded-full my-4"></div>
+            <div class="bg-red-500/50 p-4 rounded-2xl mb-4 border-2 border-red-500 shadow-lg shadow-red-500"><strong>POST</strong> <code>/Upload/{'{UserID}'}</code> - Upload an image.</div>
+            <p><strong>Required:</strong> UserID: INT, Image: FILE<br/>
+            <strong>Receive:</strong> Success message or error<br/>
+            Example Curl Command:</p>
+            <pre><code> curl -X POST -F "image=@test.png" http://localhost:7070/Upload/1</code></pre>
+        </div>
+
+        </div>
+    </body>
+    </html>
